@@ -1,0 +1,19 @@
+<h1><%= @department.name %> Classes</h1>
+
+<h2>Test data!!</h2>
+<ul>
+<% @SectionData.each do |section| %>
+  <li>
+    <p><%= section["id"] %></p>
+  </li>
+<% end %>
+</ul>
+
+<ul>
+<% @courses.each do |course| %>
+  <li>
+    <h2><%= course["CourseData"]["title"]%></h2>
+    <p><%= course["CourseData"]["description"] %></p>
+  </li>
+<% end %>
+</ul>

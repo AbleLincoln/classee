@@ -1,0 +1,31 @@
+<h1><%= @student.name %>'s Schedule </h1>
+<h2>Major: <%= @student.major %></h2>
+<h3>Classes:</h3>
+
+<ul>
+<% @classes.each do |this_class| %>
+  <% if this_class != "" %>
+  <li><%= this_class %></li>
+  <% end %>
+<% end %>
+</ul>
+
+<h3>Your schedule:</h3>
+
+<ul>
+  <% @suggestedSections.each do |k, v| %>
+  <li><%= k %> at <%= v["day"] %> <%= v["start_time"] %>-<%= v["end_time"] %></li>
+  <% end %>
+</ul>
+
+<ul>
+  <% @sections.each do |k, v| %>
+    <!-- <li><% k %> is offered:</li> -->
+    <% v %>
+    <% v.each do |sect| %>
+    <ul>
+
+    </ul>
+    <% end %>
+  <% end %>
+</ul>

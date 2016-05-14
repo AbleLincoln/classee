@@ -1,0 +1,16 @@
+
+
+<h1>Departments</h1>
+
+<ul>
+  <% @departments.each do |dept| %>
+    <li><%= link_to dept.name, department_path(dept) %></li>
+  <% end %>
+</ul>
+
+
+<ul>
+  <% #v.each do |section| %>
+  <li><%= #section["day"] %> <%= #secton["start_time"] %>-<%=# section["end_time"] %></li>
+  <% #end %>
+</ul>

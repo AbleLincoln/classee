@@ -1,0 +1,7 @@
+<h1>Students</h1>
+
+<h3><%= link_to "Give me my own unique schedule", new_student_path %></h3>
+
+<% @students.each do |student| %>
+  <p><%= link_to student.name, student_path(:id) %></p>
+<% end %>
