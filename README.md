@@ -1,4 +1,4 @@
-== README
+# README
 
 Hey Classee Crew! I'm not sure how much experience you have with Ruby on Rails,
 so I'll go over a few basics in this README.
